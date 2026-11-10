@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napoli Woodfire Pizza</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fffdf8;
+            padding: 15px;
+        }
+
+        .phone {
+            width: 280px;
+            min-height: 460px;
+            margin: auto;
+            background: #e4e9f1;
+            border: 2px solid #cbd4df;
+            border-radius: 28px;
+            padding: 14px;
+        }
+
+        .screen {
+            background: white;
+            border-radius: 14px;
+            padding: 12px;
+        }
+
+        .restaurant-header {
+            background: #ff5500;
+            color: white;
+            padding: 11px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .back {
+            font-size: 8px;
+            margin-bottom: 6px;
+        }
+
+        .restaurant-header h2 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .restaurant-header p {
+            font-size: 8px;
+        }
+
+        .section-title {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .food-card {
+            border: 1px solid #d6dce2;
+            background: #f8fafb;
+            border-radius: 7px;
+            padding: 7px;
+            margin-bottom: 9px;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 65px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .food-card h3 {
+            font-size: 9px;
+            margin-bottom: 3px;
+        }
+
+        .food-card p {
+            font-size: 7px;
+            color: #777;
+        }
+
+        input {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #d3d7dd;
+            border-radius: 5px;
+            font-size: 7px;
+            margin-bottom: 11px;
+        }
+
+        button {
+            width: 100%;
+            padding: 9px;
+            border: none;
+            border-radius: 7px;
+            background: #ff5500;
+            color: white;
+            font-size: 9px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e64d00;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="phone">
+
+    <div class="screen">
+
+        <div class="restaurant-header">
+
+            <div class="back">
+                Back to Talabat Home
+            </div>
+
+            <h2>Napoli Woodfire Pizza</h2>
+
+            <p>
+                4.6 stars (350+ ratings) · 35 mins · 15 EGP Delivery
+            </p>
+
+        </div>
+
+        <div class="section-title">
+            Today's Special
+        </div>
+
+        <div class="food-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002"
+                alt="Margherita Pizza"
+            >
+
+            <h3>Margherita Classica</h3>
+
+            <p>
+                Tomato sauce, fresh mozzarella and basil · 150 EGP
+            </p>
+
+        </div>
+
+        <input
+            type="text"
+            placeholder="Add delivery note (e.g. extra oregano, thin crust)..."
+        >
+
+        <button onclick="placeOrder()">
+            Place Order · 150 EGP
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+    function placeOrder() {
+        alert("Your pizza order has been placed!");
+    }
+</script>
+
+</body>
+</html>

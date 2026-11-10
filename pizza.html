@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Republic</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7faf9;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #164f4b;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .phone {
+            width: 280px;
+            min-height: 470px;
+            margin: auto;
+            background: #e4e9f1;
+            border: 2px solid #cbd4df;
+            border-radius: 28px;
+            padding: 14px;
+        }
+
+        .screen {
+            background: white;
+            border-radius: 14px;
+            padding: 12px;
+        }
+
+        .restaurant-header {
+            background: #ff5a00;
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        .back {
+            font-size: 9px;
+            margin-bottom: 5px;
+        }
+
+        .restaurant-header h2 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .restaurant-header p {
+            font-size: 8px;
+        }
+
+        .section-title {
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .food-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 85px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 7px;
+        }
+
+        .food-card h3 {
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+
+        .food-card p {
+            font-size: 8px;
+            color: #777;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d3d7dd;
+            border-radius: 5px;
+            font-size: 8px;
+            margin-bottom: 12px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 7px;
+            background: #ff5a00;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e65000;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Screen 2: Burger Menu (burger.html)</h1>
+
+<div class="phone">
+
+    <div class="screen">
+
+        <div class="restaurant-header">
+            <div class="back">Back to Talabat Home</div>
+
+            <h2>Burger Republic</h2>
+
+            <p>
+                4.8 stars (500+ ratings) · 25 mins · Free Delivery
+            </p>
+        </div>
+
+        <div class="section-title">
+            Today's Special
+        </div>
+
+        <div class="food-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+                alt="Double Smash Burger"
+            >
+
+            <h3>Classic Double Smash</h3>
+
+            <p>
+                2 Angus beef patties, cheddar and house sauce · 145 EGP
+            </p>
+
+        </div>
+
+        <input
+            type="text"
+            placeholder="Add delivery note (e.g. extra sauce, no onions)..."
+        >
+
+        <button onclick="placeOrder()">
+            Place Order · 145 EGP
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+    function placeOrder() {
+        alert("Order placed successfully!");
+    }
+</script>
+
+</body>
+</html>
